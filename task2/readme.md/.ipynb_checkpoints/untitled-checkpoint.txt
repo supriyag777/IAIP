@@ -1,0 +1,52 @@
+# Task 2: Customer Segmentation using K-Means Clustering
+
+## Project Overview
+This project focuses on segmenting a retail customer dataset based on purchasing behavior using unsupervised machine learning. By analyzing customer features such as **Annual Income** and **Spending Score**, we partition customers into distinct groups to help target marketing strategies effectively.
+
+---
+
+## Dataset
+- **Source:** Kaggle Customer Segmentation Dataset (`Mall_Customers.csv`)
+- **Key Features Used:**
+  - `Annual Income (k$)`: Annual income of the customer in thousands of dollars.
+  - `Spending Score (1-100)`: Score assigned by the mall based on customer behavior and spending nature.
+
+---
+
+## Technical Stack
+- **Language:** Python
+- **Libraries:** 
+  - `pandas` for data manipulation
+  - `matplotlib` & `seaborn` for data visualization
+  - `scikit-learn` for K-Means clustering
+
+---
+
+## Workflow & Methodology
+
+1. **Data Preprocessing:** Loaded customer dataset and extracted relevant feature matrix (`Annual Income` vs. `Spending Score`).
+2. **Elbow Method:** Evaluated Within-Cluster Sum of Squares (WCSS) across range $k = [1, 10]$ to identify the optimal number of clusters ($k = 5$).
+3. **Model Training:** Applied K-Means Clustering algorithm with $k = 5$.
+4. **Visualization:** Plotted segmented clusters and their respective centroids.
+5. **Export Output:** Appended cluster label predictions (`Cluster`) back to the original dataset and saved as `customer_clusters.csv`.
+
+---
+
+## Identified Customer Segments
+
+- **Cluster 1 (Sensible):** Low Annual Income, Low Spending Score
+- **Cluster 2 (Standard):** Average Annual Income, Average Spending Score
+- **Cluster 3 (Target Group):** High Annual Income, High Spending Score
+- **Cluster 4 (Careless):** Low Annual Income, High Spending Score
+- **Cluster 5 (Careful):** High Annual Income, Low Spending Score
+
+---
+
+## Folder Structure
+```text
+task2/
+├── data/
+│   └── Mall_Customers.csv          # Raw customer dataset
+└── notebooks/
+    ├── Task2_Customer_Segmentation.ipynb  # Primary Jupyter Notebook
+    └── customer_clusters.csv       # Segmented output dataset
