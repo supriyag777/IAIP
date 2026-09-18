@@ -1,0 +1,69 @@
+# Sales Data Analysis
+
+## Objective
+
+Analyze sales data to identify:
+- Sales trends over time
+- Seasonal sales patterns
+- Performance of different product categories and products
+
+## Dataset
+
+The dataset used for this project is the Superstore Sales Dataset from Kaggle.
+
+## Tools & Technologies
+
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+## Analysis Performed
+
+### 1. Monthly Sales Trend
+Analyzed monthly sales to identify changes in sales over time.
+
+### 2. Seasonal Sales Analysis
+Compared sales across different months to identify seasonal patterns.
+
+### 3. Category Performance
+Compared total sales across product categories.
+
+### 4. Product Performance
+Identified the top-performing products based on total sales.
+
+## Key Findings
+
+- November 2018 recorded the highest monthly sales.
+- February 2015 recorded the lowest monthly sales.
+- Sales were generally stronger from September to December.
+- Technology had the highest total sales among the three categories.
+- Canon imageCLASS 2200 Advanced Copier was the top-performing product by total sales.
+
+## Visualizations
+
+The project includes:
+- Monthly Sales Trend
+- Seasonal Sales by Month
+- Sales by Category
+- Top 10 Products by Sales
+
+## Conclusion
+
+The analysis shows clear sales trends and seasonal patterns in the dataset. Sales increased strongly during the September to December period, while Technology was the highest-performing category. The analysis also helped identify the products contributing the most to overall sales.
+
+## Project Structure
+
+```text
+IAIP/
+├── data/
+│   └── train.csv
+├── notebooks/
+│   └── Sales_Data_Analysis.ipynb
+├── visualizations/
+│   ├── monthly_sales_trend.png
+│   ├── seasonal_sales.png
+│   ├── category_sales.png
+│   └── top_10_products.png
+└── README.md
